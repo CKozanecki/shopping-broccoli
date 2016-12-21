@@ -7,7 +7,6 @@ import { HeaderComponent } from './header.component';
 import {DropdownDirective} from "./dropdown.directive";
 import {ShoppingListService} from "./shopping-list/shopping-list.service";
 import {RecipeService} from "./recipes/recipe.service";
-import {ShoppingListModule} from "./shopping-list/shopping-list.module";
 import {AppRouting} from "./app.routing";
 import { HomeComponent } from './home.component';
 
@@ -21,8 +20,7 @@ import { HomeComponent } from './home.component';
   imports: [
     BrowserModule,
     HttpModule,
-    AppRouting,
-    ShoppingListModule
+    AppRouting
   ],
   providers: [RecipeService, ShoppingListService],
   bootstrap: [AppComponent]
